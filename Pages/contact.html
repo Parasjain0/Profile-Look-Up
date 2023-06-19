@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="../Images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <!-- We can use Online bootstrap css link but we will use offline. -->
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <style>
+        /* Here I am adding some gradient */
+        body {
+            background-image: linear-gradient(to left, rgb(100, 96, 96), rgb(233, 212, 212), rgb(60, 58, 58));
+        }
+
+        /* Here we are changing card body's background color */
+        .card-body {
+            background-color: rgb(126, 122, 128);
+        }
+
+        h1 {
+            text-align: center;
+            text-shadow: 1px 1px 2px rgb(158, 41, 41), 0 0 1em rgb(24, 24, 26), 0 0 0.2em rgb(76, 76, 130);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- From here, navbar is starting -->
+        <ul class="nav nav-pills my-3 mx-3">
+            <li class="nav-item">
+                <a class="nav-link  fs-5 " href="../index.html" style="color: white;">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle fs-5" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="true" aria-expanded="false" style="color: white;">Profiles</a>
+                <div class="dropdown-menu dropdown-menu-dark">
+                    <a class="dropdown-item" href="../Pages/tata.html">Ratan Tata</a>
+                    <a class="dropdown-item" href="../Pages/jeff.html">Jeff Bezos</a>
+                    <a class="dropdown-item" href="../Pages/bill.html">Bill Gates</a>
+                    <a class="dropdown-item" href="../Pages/mukesh.html">Mukesh Ambani</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-5 active border" href="contact.html" style="color: white;">Contact us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled fs-5" href="#" style="color: rgb(27, 25, 25);">Logout</a>
+            </li>
+        </ul>
+        <!-- Navbaar finish -->
+        <h1>Contact Us</h1>
+        <div class="row">
+            <div class="col-lg-6 col-md-10 col-sm-9 col-10 mx-auto my-3 text-bg-secondary">
+                <form>
+                    <!-- Here I am adding name field -->
+                    <div class="mb-3">
+                        <label for="InputName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="InputName" placeholder="FirstName LastName"
+                            required>
+                    </div>
+                    <!-- Here I am adding email field -->
+                    <div class="mb-3">
+                        <label for="InputEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp"
+                            placeholder="xyz@abc.com" required>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <!-- Here I am adding number field -->
+                    <div class="mb-3">
+                        <label for="InputNumber" class="form-label">Number</label>
+                        <input type="number" class="form-control" id="InputNumber" placeholder="+91 1234567890">
+                    </div>
+                    <!-- Here I am taking message -->
+                    <div class="mb-3">
+                        <label for="InputTextarea">Message</label>
+                        <textarea class="form-control" id="InputTextarea" rows="5" placeholder="Write Message"
+                            required></textarea>
+                    </div>
+                    <!-- Here I am adding confirmation check box -->
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                        <label class="form-check-label" for="exampleCheck1">I'm not a robot</label>
+                    </div>
+                    <!-- Here I am adding submit button -->
+                    <div class="mb-3 text-center">
+                        <button type="submit" class="btn btn-dark">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--JavaScript -->
+    <!-- We can use online link but here we are using compiled version-->
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
